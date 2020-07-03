@@ -11,81 +11,81 @@ $corTexto: #5f5f5f;
 }
 
 .home-page {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100vh;
   background-image: url(../img/parede2.jpg);
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  color: $corTexto;
+  height: 100vh;
 }
 
-header {
+.navbar {
   position: absolute;
   display: flex;
   width: 90%;
-  height: 30px;
+  height: 37px;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  margin-top: 50px;
   justify-content: space-between;
-  align-items: center;
-  padding: 30px 10%;
-  border: 2px solid $corTexto;
-  border-radius: 65px;
+  // align-items: center;
+  border-radius: 15px;
+  background-color: rgba(245, 245, 245, 0.748);
+  padding: 0;
+}
 
+.brand-title {
   img {
-    width: 200px;
+    width: 168px;
+    margin-top: -77px;
   }
 }
 
-.nav-links {
-  list-style: none;
-  display: none;
-  margin-bottom: 0px;
+.navbar-links {
+  ul {
+    display: flex;
+    flex-direction: column;
+    li {
+      list-style: none;
 
-  li {
-    display: inline-block;
-    padding: 0px 5px;
+      a {
+        text-decoration: none;
+        color: $corTexto;
 
-    a {
-      transition: all 0.3s ease 0s;
-      text-decoration: none;
-      color: #5f5f5f;
+        padding-left: 1rem;
+        padding-right: 1rem;
 
-      &:hover {
-        color: whitesmoke;
+        &:hover {
+          color: whitesmoke;
+        }
       }
     }
   }
 }
 
+.home-conteudo{
+  position: absolute;
+  margin-top: 40px;
+}
+
 .toggle-button {
   position: absolute;
-  top: 1.2rem;
-  right: 2rem;
+  top: 0.5rem;
+  right: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
   height: 21px;
 
-  &:hover {
-    .bar {
-      background-color: white;
-    }
+  .bar {
+    height: 4px;
+    width: 100%;
+    background-color: $corTexto;
+    border-radius: 10px;
   }
-}
-
-.toggle-button .bar {
-  height: 4px;
-  width: 100%;
-  background-color: $corTexto;
-  border-radius: 10px;
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -94,21 +94,27 @@ header {
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-  .nav-links {
-    display: flex;
+  .navbar-links {
+    ul {
+      display: flex;
+      flex-direction: row;
+    }
   }
+
   .toggle-button {
     display: none;
+  }
+
+  .brand-title {
+    img {
+     
+      margin-top: -14px;
+    }
   }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  .nav-links {
-    li {
-      padding: 0px 20px;
-    }
-  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
