@@ -87,6 +87,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin: auto;
+  margin-left: 150px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 100px;
@@ -107,7 +108,6 @@ body {
 
 .home-imagem {
   width: 60%;
-  padding-left: 5%;
 }
 
 hr {
@@ -442,9 +442,15 @@ hr {
     width: 30%;
     margin: auto;
   }
+  .home-page-conteudo {
+    margin: auto;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .home-page-conteudo {
+    margin-left: 100px;
+  }
   .home-page-conteudo p {
     font-size: 1.4rem;
   }
