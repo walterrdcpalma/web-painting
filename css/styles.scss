@@ -78,7 +78,7 @@ body {
   width: 90%;
   display: flex;
   margin: auto;
-  margin-left: 150px;
+  margin-left: 130px;
   flex-wrap: wrap;
   margin-top: 100px;
   justify-content: space-evenly;
@@ -412,7 +412,7 @@ hr {
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .home-page-conteudo {
-    margin-left: 100px;
+    margin-left: 70px;
     p {
       font-size: 1.4rem;
     }
@@ -449,6 +449,7 @@ hr {
     p {
       font-size: 2rem;
     }
+    margin-left: 100px;
   }
   .cor-catalogo {
     height: 150px;
